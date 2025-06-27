@@ -481,8 +481,11 @@ class BuildInfoConstants(enum.Enum):
       'build_version_incremental',
       'ro.build.version.incremental',
   )
+  # Refer to android.os.Build.VERSION#SDK_INT for description
   BUILD_VERSION_SDK = 'build_version_sdk', 'ro.build.version.sdk'
-  BUILD_VERSION_SDK_FULL = 'build_version_sdk_full', 'ro.build.version.sdk_full'  
+  # Only available in SDK > 36 devices.
+  # Refer to android.os.Build.VERSION#SDK_INT_FULL for description
+  BUILD_VERSION_SDK_FULL = 'build_version_sdk_full', 'ro.build.version.sdk_full'
   BUILD_PRODUCT = 'build_product', 'ro.build.product'
   BUILD_CHARACTERISTICS = 'build_characteristics', 'ro.build.characteristics'
   DEBUGGABLE = 'debuggable', 'ro.debuggable'
